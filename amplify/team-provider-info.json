@@ -1,0 +1,14 @@
+{
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "pcc-production-20190502184947-authRole",
+            "UnauthRoleArn": "arn:aws:iam::258724242652:role/pcc-production-20190502184947-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::258724242652:role/pcc-production-20190502184947-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "pcc-production-20190502184947-deployment",
+            "UnauthRoleName": "pcc-production-20190502184947-unauthRole",
+            "StackName": "pcc-production-20190502184947",
+            "StackId": "arn:aws:cloudformation:us-east-1:258724242652:stack/pcc-production-20190502184947/964ba800-6d2c-11e9-9f71-0a456a010dd4"
+        }
+    }
+}
