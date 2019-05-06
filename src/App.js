@@ -11,53 +11,14 @@ import {
   Menu,
   Sticky
 } from "semantic-ui-react";
+import Navbar from "./mainComponents/navbar.js";
 import "./App.css";
 
 class App extends React.Component {
-  state = {};
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
-    const { activeItem } = this.state;
     return (
       <Container className="App" fluid>
-        <Sticky>
-          <Menu inverted borderless color="blue" className="secondary ">
-            <Menu.Item as="h2">
-              Pastoral Counseling Center of Flushing
-            </Menu.Item>
-
-            <Menu.Menu position="right">
-              <Menu.Item
-                name="editorials"
-                active={activeItem === "editorials"}
-                onClick={this.handleItemClick}
-                as="h4"
-              >
-                Editorials
-              </Menu.Item>
-
-              <Menu.Item
-                name="reviews"
-                active={activeItem === "reviews"}
-                onClick={this.handleItemClick}
-                as="h4"
-              >
-                Reviews
-              </Menu.Item>
-
-              <Menu.Item
-                name="upcomingEvents"
-                active={activeItem === "upcomingEvents"}
-                onClick={this.handleItemClick}
-                as="h4"
-              >
-                Upcoming Events
-              </Menu.Item>
-            </Menu.Menu>
-          </Menu>
-        </Sticky>
-
+        <Navbar />
         <Grid fluid={"true"} columns={1}>
           <Grid.Column>
             <Button size="huge" fluid>
