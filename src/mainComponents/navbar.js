@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Dimmer,
-  Header,
-  Image,
-  Segment,
-  Grid,
-  Form,
-  Menu,
-  Sticky
-} from "semantic-ui-react";
+import { Grid, Menu, Sticky } from "semantic-ui-react";
 
 class Navbar extends React.Component {
   state = {};
@@ -20,34 +9,43 @@ class Navbar extends React.Component {
     return (
       <Sticky>
         <Menu inverted borderless color="blue" className="secondary ">
+          {/* left side of Navbar  */}
           <Menu.Item as="h2">Pastoral Counseling Center of Flushing</Menu.Item>
-
+          {/* right side of Navbar */}
           <Menu.Menu position="right">
             <Menu.Item
-              name="editorials"
-              active={activeItem === "editorials"}
+              name="about"
+              active={activeItem === "about"}
               onClick={this.handleItemClick}
               as="h4"
             >
-              Editorials
+              About
             </Menu.Item>
 
             <Menu.Item
-              name="reviews"
-              active={activeItem === "reviews"}
+              name="services"
+              active={activeItem === "services"}
               onClick={this.handleItemClick}
               as="h4"
             >
-              Reviews
+              Services
             </Menu.Item>
 
             <Menu.Item
-              name="upcomingEvents"
-              active={activeItem === "upcomingEvents"}
+              name="testimonals"
+              active={activeItem === "testimonals"}
               onClick={this.handleItemClick}
               as="h4"
             >
-              Upcoming Events
+              Testimonals
+            </Menu.Item>
+            <Menu.Item
+              name="contact"
+              active={activeItem === "contact"}
+              onClick={this.handleItemClick}
+              as="h4"
+            >
+              Contact
             </Menu.Item>
           </Menu.Menu>
         </Menu>

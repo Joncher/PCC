@@ -11,7 +11,7 @@ import {
   Menu,
   Sticky
 } from "semantic-ui-react";
-import Navbar from "./mainComponents/navbar.js";
+import Navbar from "./mainComponents/Navbar.js";
 import "./App.css";
 
 class App extends React.Component {
