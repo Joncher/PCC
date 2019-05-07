@@ -4,3 +4,13 @@
 
 .Navbar {
 }
+
+.background {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome {
+  font-family: "Lobster", cursive;
+  border-radius: 10px;
+}
