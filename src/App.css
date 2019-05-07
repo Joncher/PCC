@@ -14,3 +14,13 @@
   font-family: "Lobster", cursive;
   border-radius: 10px;
 }
+
+.about {
+  margin-top: 1em !important;
+}
+
+.information {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em !important;
+  line-height: 20pt;
+}

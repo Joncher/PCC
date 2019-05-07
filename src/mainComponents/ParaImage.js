@@ -6,7 +6,7 @@ const insideStyles = {
   background: "rgb(128,128,128,0.3)",
   padding: 20,
   position: "absolute",
-  top: "50%",
+  top: "45%",
   left: "50%",
   transform: "translate(-50%,-50%)"
 };
