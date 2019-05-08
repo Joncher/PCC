@@ -6,7 +6,7 @@ class AboutSection extends Component {
     return (
       <Container
         className="about"
-        style={{ minWidth: window.innerWidth * 0.5 }}
+        style={{ maxWidth: window.innerWidth * 0.5 }}
       >
         <Segment
           as="h1"
