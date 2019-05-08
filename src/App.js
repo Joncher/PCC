@@ -10,94 +10,92 @@ import {
   Sticky,
   Ref
 } from "semantic-ui-react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Navbar from "./MainComponents/Navbar.js";
 import ParaImage from "./MainComponents/ParaImage";
 import AboutSection from "./Containers/AboutSection";
+import Footer from "./MainComponents/Footer";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Container className="App" fluid>
-          <Navbar />
-          <ParaImage
-            image="./StockPhotos/daylight-daytime-grass-808465.jpg"
-            strength={750}
-            height={window.innerHeight}
-            info={"Welcome to PCC"}
-            class="welcome"
-          />
+      <Container className="App" fluid>
+        <Navbar />
 
-          <AboutSection height={window.innerHeight} />
-          <Grid fluid={"true"} columns={1}>
-            <Grid.Column>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-              <Button size="huge" fluid>
-                Hey
-              </Button>
-            </Grid.Column>
-          </Grid>
-        </Container>
-      </Router>
+        <Switch>
+          <Route exact path="/" component={ParaImage} />
+          <Route exact path="/about" component={AboutSection} />
+        </Switch>
+
+        <Footer />
+
+        <Grid fluid={"true"} columns={1}>
+          <Grid.Column>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+            <Button size="huge" fluid>
+              Hey
+            </Button>
+          </Grid.Column>
+        </Grid>
+      </Container>
     );
   }
 }

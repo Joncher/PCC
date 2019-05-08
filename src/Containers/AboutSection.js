@@ -2,12 +2,6 @@ import React, { Component } from "react";
 import { Container, Segment } from "semantic-ui-react";
 
 class AboutSection extends Component {
-  state = {
-    scroll: 0
-  };
-
-  componentDidMount() {}
-
   render() {
     return (
       <Container

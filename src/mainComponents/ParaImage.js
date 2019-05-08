@@ -15,12 +15,12 @@ class ParaImage extends Component {
     console.log(this.props.image);
     return (
       <Parallax
-        bgImage={require(`${this.props.image}`)}
-        strength={this.props.strength}
+        bgImage={require("./StockPhotos/daylight-daytime-grass-808465.jpg")}
+        strength={750}
       >
-        <Container style={{ height: this.props.height }}>
-          <div className={this.props.class} style={insideStyles}>
-            <h1 className={this.props.class}>{this.props.info}</h1>
+        <Container style={{ height: window.innerHeight }}>
+          <div className={"welcome"} style={insideStyles}>
+            <h1 className={"welcome"}>{"Welcome to PCC"}</h1>
           </div>
         </Container>
       </Parallax>
