@@ -3,7 +3,11 @@ import { Grid, Menu, Sticky } from "semantic-ui-react";
 
 class Navbar extends React.Component {
   state = {};
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+    window.location = `/${name}`;
+  };
+
   render() {
     const { activeItem } = this.state;
     return (
