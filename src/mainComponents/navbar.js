@@ -9,7 +9,9 @@ class Navbar extends React.Component {
     return (
       <Menu inverted borderless color="blue" className="secondary fixed">
         {/* left side of Navbar  */}
-        <Menu.Item as="h2">Pastoral Counseling Center of Flushing</Menu.Item>
+        <Menu.Item as="h2" style={{ fontSize: "1.5vw" }}>
+          Pastoral Counseling Center of Flushing
+        </Menu.Item>
         {/* right side of Navbar */}
         <Menu.Menu position="right">
           <Menu.Item
