@@ -10,13 +10,17 @@
   height: auto;
 }
 
-.welcome {
+#header {
   font-family: "Lobster", cursive;
   border-radius: 10px;
 }
 
-.about {
+.main {
   margin-top: 5em !important;
+}
+
+.contact {
+  margin-bottom: 1em !important;
 }
 
 .information {
@@ -30,7 +34,7 @@
 
   width: 100% !important;
   padding: 0px !important;
-  height: 15em;
+  height: 17em;
   display: flex;
   justify-content: center;
 }

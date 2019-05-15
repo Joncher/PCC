@@ -5,7 +5,9 @@ import {
   Menu,
   Divider,
   Container,
-  Form
+  Form,
+  Select,
+  Input
 } from "semantic-ui-react";
 
 class Footer extends Component {
@@ -19,14 +21,16 @@ class Footer extends Component {
           Phone: 718-463-4613 <br />
           Fax: 718-661-4462
         </Menu.Item>
-        <Menu.Item as="Form" id="form">
-          <Form.Group widths="equal">
-            <Form.Input
-              fluid
-              label="Contact us here:"
-              placeholder="First name"
-            />
-            <Form.Input placeholder="E-mail" />
+
+        <Menu.Item>
+          <Form.Group grouped>
+            <div>Contact us here:</div>
+            <br />
+            <Form.Input required placeholder="Full Name" />
+            <br />
+            <Form.Input required placeholder="E-mail" />
+            <br />
+            <Form.Select required placeholder="R" />
             <Form.Button>Submit</Form.Button>
           </Form.Group>
         </Menu.Item>

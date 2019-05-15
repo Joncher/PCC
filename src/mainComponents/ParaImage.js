@@ -19,8 +19,8 @@ class ParaImage extends Component {
         strength={750}
       >
         <Container style={{ height: window.innerHeight }}>
-          <div className={"welcome"} style={insideStyles}>
-            <h1 className={"welcome"}>{"Welcome to PCC"}</h1>
+          <div id={"header"} style={insideStyles}>
+            <h1 id={"header"}>{"Welcome to PCC"}</h1>
           </div>
         </Container>
       </Parallax>

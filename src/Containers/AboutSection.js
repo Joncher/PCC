@@ -4,17 +4,8 @@ import { Container, Segment } from "semantic-ui-react";
 class AboutSection extends Component {
   render() {
     return (
-      <Container
-        className="about"
-        style={{ maxWidth: window.innerWidth * 0.5 }}
-      >
-        <Segment
-          as="h1"
-          size="massive"
-          raised="true"
-          className="welcome"
-          id="about"
-        >
+      <Container className="main" style={{ maxWidth: window.innerWidth * 0.5 }}>
+        <Segment as="h1" size="massive" raised="true" id="header">
           About
         </Segment>
         <Segment className="information">
